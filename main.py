@@ -1,11 +1,11 @@
 # carson salameh
 
-def encode(code):
-  encoded_password = ""
-  for digit in code:
-    digit = str(int(digit+3))
-    encoded_password += digit
-  return int(encoded_code)
+def encode(password):
+    encoded_password = ""
+    for digit in password:
+        new_digit = (int(digit) + 3) % 10 
+        encoded_password += str(new_digit)
+    return encoded_password
 
 
 def main():
